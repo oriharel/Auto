@@ -1,0 +1,242 @@
+.loyalty-details .crowns {
+    position: relative;
+    background: transparent url(../img/m/crown_big_off.png) top left no-repeat;
+    background-size: 260px 50px;
+    width: 260px;
+    height: 55px;
+}
+.loyalty-details .crowns .on {
+    position: absolute;
+    background: transparent url(../img/m/crown_big_on.png) top left no-repeat;
+    background-size: 260px 50px;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    z-index: 102;
+}
+
+.loyalty-details {
+    background-color:#eaeaea;
+    padding: 10px;
+}
+
+.loyalty-details .loyaltyTitle {
+    font-size: 19px;
+    font-weight: bold;
+    color: #3A2C71;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.loyalty-details .whiteDiv {
+    background-color:#ffffff;
+    padding: 7px;
+    border-radius:12px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CFCFCF;
+}
+
+.loyalty-details .whiteDiv .description
+{
+    font-size: 19px;
+    font-weight: bold;
+    color: #3A2C71;
+}
+
+.loyalty-details .disclaimer
+{
+    font-size: 10px;
+}
+
+.graySeperator
+{
+    border-top: 1px solid #B0B0B0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.loyalty-details .whiteDiv .secondaryTitle
+{
+    font-size: 14px;
+}
+
+.loyalty-details .upgradeBar
+{
+    position: relative;
+    background: #FFFFFF;
+    border-radius:2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E4E4E4), to(#fdfdfd));
+    height: 17px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    -webkit-box-shadow: inset -1px 1px 2px #888;
+}
+
+.loyalty-details .upgradeBar .yellowUpgradeBar {
+    position: absolute;
+    background: #FABB63;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFE370), to(#AC8A00));
+    top: 0px;
+    left: 0px;
+    height: 16px;
+    z-index: 102;
+    margin: 1px;
+    -webkit-border-top-left-radius:2px;
+    -webkit-border-bottom-left-radius:2px;
+}
+
+.presentContainer
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.loyaltyTable
+{
+    margin: 10px 0 10px 0;
+    border-color: #CDCDCD;
+    background-color:#ffffff;
+}
+
+.loyaltyTable .crownsCell
+{
+    background-size: 90px;
+    height: 20px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.loyaltyTable .bronzeCell
+{
+    background: transparent url(../img/h/bronze_small.png) top left no-repeat;
+}
+.loyaltyTable .silverCell
+{
+    background: transparent url(../img/h/silver_small.png) top left no-repeat;
+}
+.loyaltyTable .goldCell
+{
+    background: transparent url(../img/h/gold_small.png) top left no-repeat;
+}
+.loyaltyTable .platinumCell
+{
+    background: transparent url(../img/h/platinum_small.png) top left no-repeat;
+}
+.loyaltyTable .diamondCell
+{
+    background: transparent url(../img/h/diamond_small.png) top left no-repeat;
+}
+
+.loyaltyTable .tableCell
+{
+    font-weight: normal;
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+}
+
+.loyaltyTable .tableHeader
+{
+    color: #5D4E8A;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.loyaltyTable .earnAmount
+{
+    font-size: 15px;
+    font-weight: bold;;
+}
+
+.arrowContainer
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.whiteArrow
+{
+    background: transparent url(../img/h/violet_triangle.png) top left no-repeat;
+    background-size: 15px 15px;
+    position: relative;
+    top: 1.5px;
+    width: 15px;
+    height: 15px;
+    margin-left: 22.5px;
+    margin-top: 20px;
+}
+
+.presentContainer img
+{
+    width: 50px;
+    height: 55px;
+    margin-bottom: 5px;
+}
+
+.present {
+    float: left;
+    width: 25%;
+}
+
+.present .singlePresentOn
+{
+    background: transparent url(../img/h/single_present_on.png) top left no-repeat;
+    background-size: 45px 48px;
+    width: 45px;
+    height: 48px;
+    margin-bottom: 5px;
+}
+.present .singlePresentOff
+{
+    background: transparent url(../img/h/single_present_off.png) top left no-repeat;
+    background-size: 45px 48px;
+    width: 45px;
+    height: 48px;
+    margin-bottom: 5px;
+}
+
+.presentDetails
+{
+    background: transparent url(../img/h/green_check_mark.png) top left no-repeat;
+    background-size: 15px 15px;
+    background-position: left center;
+    font-size: 15px;
+    text-align: left;
+    width: 70px;
+    padding-left: 17px;
+    line-height: 13px;
+}
+
+.presentDetails img
+{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+
+.loyalty-details .smallProgressContainer {
+    position: relative;
+    background: #E6E6E7;
+    border-radius:12px;
+    height: 7px;
+    width: 50px;
+    -webkit-box-shadow: inset -1px 1px 2px #888;
+    margin: 5px;
+}
+.loyalty-details .smallProgressFilling {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEF514), to(#D3AF12));
+    -webkit-border-top-left-radius:12px;
+    -webkit-border-bottom-left-radius:12px;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 7px;
+    z-index: 102;
+}

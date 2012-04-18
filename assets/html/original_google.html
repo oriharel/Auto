@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    
+    <link rel="stylesheet" href="../css/merchantInfo.css">
+    
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCZy6FUzDXAmV5v6DH9OFK4ZNYO86SqFb0&sensor=true">
+    </script>
+    
+    <script type="text/javascript">
+        function initialize() {
+        	
+                        
+            var originLat = "32.179402",
+	 			originLon = "34.858187",	
+	 			destLat = "32.194505",
+	 			destLon = "34.881747";
+            calcRoute(originLat, originLon, destLat, destLon);
+        }
+        
+        function calcRoute(originPtLat, originPtLon, destPtLat, destPtLon) {
+  			
+  			var haight = new google.maps.LatLng(originPtLat, originPtLon);
+  			var oceanBeach = new google.maps.LatLng(destPtLat, destPtLon);
+    		
+    		var request = {
+        			origin: haight,
+        			destination: oceanBeach,
+        			// Note that Javascript allows us to access the constant
+        			// using square brackets and a string value as its
+        			// "property."
+        			travelMode: google.maps.DirectionsTravelMode['DRIVING']
+   		 		};
+   		 	var directionsService = new google.maps.DirectionsService();
+    		directionsService.route(request, function(response, status) {
+      				if (status == google.maps.DirectionsStatus.OK) {
+      					alert('status ok');
+        				console.log('response is '+JSON.stringify(response));
+      				}
+    			});
+  		}
+    </script>
+</head>
+<body onload="initialize()">
+
+</body>
+</html>
